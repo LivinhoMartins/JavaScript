@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><!--Eventos são coisas q podem acontecer, por exemplo: Passar o mouse em cima e a cor mudar-->
+      <!--Função são os acontecimentos só quando o evento ocorrer; Vc separa os blocos com Function(){Aqui dentro}-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: blue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick ="clicar()" onmouseenter="entrar()" onmouseout="sair()">BOTÃO</div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar(){
+            a.innerText='CLICOU'  
+            a.style.background='red'  
+        }
+        function entrar(){
+            a.innerText='NÃO CLIQUE AQUI'
+            a.style.background='blue'
+        }
+        function sair(){
+            a.innerText="SEU CUZÃO"
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+    body {
+        background: rgb(68,125,199);
+        color: white;
+        font: normal 18pt arial;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Inicinando estúdios com DOM</h1>
+    <p>Testando tudo</p>
+    <div class="Lukinhas">Aqui vai o resultado</div>
+    <p name="vanessa">Eu amo a <strong>Vanessinha</strong></p>
+    <div id="msg">Clique aqui</div>
+<script>
+    var d = window.document.getElementById('msg')
+    d.style.background = 'black'
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write('Está escrito assim: '+p1.innerText)
+    p1.style.color='yellow'
+    p1.style.background='black'
+    var van = window.document.getElementsByName('vanessa')[0]
+    van.style.color='black'
+    var t1 = window.document.querySelector('div.Lukinhas')
+    t1.style.color='yellow'
+
+</script>
+</body>
+</html>
