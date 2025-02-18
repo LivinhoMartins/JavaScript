@@ -1,0 +1,1 @@
+<a href="https://livinhomartins.github.io/JavaScript/Ex018%20Analisador%20de%20n%C3%BAmeros/Modelo.html">Acessar o contador automático do Livinho.</a>
